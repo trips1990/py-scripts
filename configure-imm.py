@@ -28,7 +28,7 @@ with open("host-list.txt","r") as f:
       hostname= hostNames[i]
       ssh.connect(host,22,'USERID',pas)
       cmdExec("ifconfig eth0 -n %s" %(hostname))
-      cmdExec("smtp -s 69.26.45.167")
+      cmdExec("smtp -s x.x.x.x")
       cmdExec("smtp -pn 25")
       cmdExec("dns -ddns enabled")
       cmdExec("dns -dnsrc manual")
